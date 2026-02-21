@@ -1,44 +1,11 @@
 {
   "type": "vector.function",
-  "input_schema": {
-    "type": "array",
-    "description": "A collection of cat pictures to rank by emotional resonance.",
-    "minItems": 2,
-    "items": {
-      "type": "image",
-      "description": "A picture of a cat to evaluate for the depth and immediacy of emotional response it provokes."
-    }
-  },
-  "output_length": {
-    "$starlark": "len(input)"
-  },
-  "input_split": {
-    "$starlark": "[[item] for item in input]"
-  },
-  "input_merge": {
-    "$starlark": "[item for sublist in input for item in sublist]"
-  },
   "tasks": [
     {
-      "type": "placeholder.vector.function",
-      "input_schema": {
-        "type": "array",
-        "description": "A collection of cat pictures to rank by the immediacy of emotional impact each one provokes.",
-        "minItems": 2,
-        "items": {
-          "type": "image",
-          "description": "A cat picture to evaluate for how quickly and involuntarily it provokes an emotional reaction."
-        }
-      },
-      "output_length": {
-        "$starlark": "len(input)"
-      },
-      "input_split": {
-        "$starlark": "[[item] for item in input]"
-      },
-      "input_merge": {
-        "$starlark": "[item for sublist in input for item in sublist]"
-      },
+      "type": "vector.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "rank-cat-pics-by-emotional-immediacy",
+      "commit": "c1f8bd3ee18bf58a604acd098d5859e2c38db2cf",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -48,25 +15,10 @@
       }
     },
     {
-      "type": "placeholder.vector.function",
-      "input_schema": {
-        "type": "array",
-        "description": "A collection of cat pictures to rank by the depth and staying power of the emotional response each one provokes.",
-        "minItems": 2,
-        "items": {
-          "type": "image",
-          "description": "A cat picture to evaluate for how deeply and durably the emotional response it provokes penetrates beyond the initial reaction."
-        }
-      },
-      "output_length": {
-        "$starlark": "len(input)"
-      },
-      "input_split": {
-        "$starlark": "[[item] for item in input]"
-      },
-      "input_merge": {
-        "$starlark": "[item for sublist in input for item in sublist]"
-      },
+      "type": "vector.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "rank-cat-emotional-depth",
+      "commit": "b093b74971e345b3e7bbe9ed535eb178dcc7350c",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -104,5 +56,23 @@
       }
     }
   ],
-  "description": "Ranks cat pictures by emotional resonance — how powerfully each image provokes genuine feeling. Evaluates three dimensions: immediacy of impact (the gut-punch first reaction), depth of feeling (lingering emotional weight), and urge to share (compulsion to show someone). Technical quality is irrelevant; only the strength of feeling matters."
+  "input_split": {
+    "$starlark": "[[item] for item in input]"
+  },
+  "input_merge": {
+    "$starlark": "[item for sublist in input for item in sublist]"
+  },
+  "description": "Ranks cat pictures by emotional resonance — how powerfully each image provokes genuine feeling. Evaluates three dimensions: immediacy of impact (the gut-punch first reaction), depth of feeling (lingering emotional weight), and urge to share (compulsion to show someone). Technical quality is irrelevant; only the strength of feeling matters.",
+  "input_schema": {
+    "type": "array",
+    "description": "A collection of cat pictures to rank by emotional resonance.",
+    "minItems": 2,
+    "items": {
+      "type": "image",
+      "description": "A picture of a cat to evaluate for the depth and immediacy of emotional response it provokes."
+    }
+  },
+  "output_length": {
+    "$starlark": "len(input)"
+  }
 }

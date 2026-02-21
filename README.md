@@ -25,15 +25,15 @@ A normalized vector of numbers (one per input image) that sum to 1. Each value r
 
 Emotional resonance is not a single property. It is the product of three distinct qualities, each evaluated independently by a dedicated sub-function. An image may be strong in one dimension and weak in another; the interplay between all three determines the final ranking.
 
-### 1. Immediacy of Impact — [{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})
+### 1. Immediacy of Impact — [rank-cat-pics-by-emotional-immediacy](https://github.com/ObjectiveAI-claude-code-1/rank-cat-pics-by-emotional-immediacy)
 
 The speed and involuntariness of the emotional reaction. Does this image hit the viewer before they have time to think? A reflexive laugh, a sudden gasp, an involuntary softening of the face — these are signs of high immediacy. The emotional content is front and center, seizing attention the instant the image registers. No study, no context, no interpretation required. This dimension measures the gut-punch moment: the first half-second of contact.
 
-### 2. Depth of Feeling — [{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})
+### 2. Depth of Feeling — [rank-cat-emotional-depth](https://github.com/ObjectiveAI-claude-code-1/rank-cat-emotional-depth)
 
 The weight and staying power of the emotional response beyond the initial reaction. Does the image make the viewer linger, return, remember? High-depth images capture something that gestures toward larger human experiences — tenderness, vulnerability, innocence, companionship, wonder — in a way that settles beneath the surface and resurfaces unbidden later. This dimension measures not just whether the viewer reacts, but whether the feeling endures.
 
-### 3. Urge to Share — [{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }})
+### 3. Urge to Share — [{{ .Task2 }}](https://github.com/ObjectiveAI-claude-code-1/{{ .Task2 }})
 
 The compulsion to immediately show the image to someone else. An image that scores highly here carries an emotional charge so potent that experiencing it alone feels incomplete — it makes sharing feel like a reflex, not a choice. This dimension captures the universality and transferability of the emotional response: the confidence that the image will reliably land for nearly anyone who sees it. It serves as a natural check on the other two dimensions, filtering out reactions that are too mild to share or too personal to transfer.
 
