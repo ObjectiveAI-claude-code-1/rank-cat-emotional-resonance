@@ -1,0 +1,108 @@
+{
+  "type": "vector.function",
+  "input_schema": {
+    "type": "array",
+    "description": "A collection of cat pictures to rank by emotional resonance.",
+    "minItems": 2,
+    "items": {
+      "type": "image",
+      "description": "A picture of a cat to evaluate for the depth and immediacy of emotional response it provokes."
+    }
+  },
+  "output_length": {
+    "$starlark": "len(input)"
+  },
+  "input_split": {
+    "$starlark": "[[item] for item in input]"
+  },
+  "input_merge": {
+    "$starlark": "[item for sublist in input for item in sublist]"
+  },
+  "tasks": [
+    {
+      "type": "placeholder.vector.function",
+      "input_schema": {
+        "type": "array",
+        "description": "A collection of cat pictures to rank by the immediacy of emotional impact each one provokes.",
+        "minItems": 2,
+        "items": {
+          "type": "image",
+          "description": "A cat picture to evaluate for how quickly and involuntarily it provokes an emotional reaction."
+        }
+      },
+      "output_length": {
+        "$starlark": "len(input)"
+      },
+      "input_split": {
+        "$starlark": "[[item] for item in input]"
+      },
+      "input_merge": {
+        "$starlark": "[item for sublist in input for item in sublist]"
+      },
+      "skip": null,
+      "input": {
+        "$jmespath": "input"
+      },
+      "output": {
+        "$jmespath": "output"
+      }
+    },
+    {
+      "type": "placeholder.vector.function",
+      "input_schema": {
+        "type": "array",
+        "description": "A collection of cat pictures to rank by the depth and staying power of the emotional response each one provokes.",
+        "minItems": 2,
+        "items": {
+          "type": "image",
+          "description": "A cat picture to evaluate for how deeply and durably the emotional response it provokes penetrates beyond the initial reaction."
+        }
+      },
+      "output_length": {
+        "$starlark": "len(input)"
+      },
+      "input_split": {
+        "$starlark": "[[item] for item in input]"
+      },
+      "input_merge": {
+        "$starlark": "[item for sublist in input for item in sublist]"
+      },
+      "skip": null,
+      "input": {
+        "$jmespath": "input"
+      },
+      "output": {
+        "$jmespath": "output"
+      }
+    },
+    {
+      "type": "placeholder.vector.function",
+      "input_schema": {
+        "type": "array",
+        "description": "A collection of cat pictures to rank by how strongly each one compels a viewer to share it with someone else.",
+        "minItems": 2,
+        "items": {
+          "type": "image",
+          "description": "A cat picture to evaluate for the strength of the urge it creates to immediately show it to another person."
+        }
+      },
+      "output_length": {
+        "$starlark": "len(input)"
+      },
+      "input_split": {
+        "$starlark": "[[item] for item in input]"
+      },
+      "input_merge": {
+        "$starlark": "[item for sublist in input for item in sublist]"
+      },
+      "skip": null,
+      "input": {
+        "$jmespath": "input"
+      },
+      "output": {
+        "$jmespath": "output"
+      }
+    }
+  ],
+  "description": "Ranks cat pictures by emotional resonance — how powerfully each image provokes genuine feeling. Evaluates three dimensions: immediacy of impact (the gut-punch first reaction), depth of feeling (lingering emotional weight), and urge to share (compulsion to show someone). Technical quality is irrelevant; only the strength of feeling matters."
+}
