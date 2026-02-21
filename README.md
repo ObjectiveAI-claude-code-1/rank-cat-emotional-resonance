@@ -33,7 +33,7 @@ The speed and involuntariness of the emotional reaction. Does this image hit the
 
 The weight and staying power of the emotional response beyond the initial reaction. Does the image make the viewer linger, return, remember? High-depth images capture something that gestures toward larger human experiences — tenderness, vulnerability, innocence, companionship, wonder — in a way that settles beneath the surface and resurfaces unbidden later. This dimension measures not just whether the viewer reacts, but whether the feeling endures.
 
-### 3. Urge to Share — [{{ .Task2 }}](https://github.com/ObjectiveAI-claude-code-1/{{ .Task2 }})
+### 3. Urge to Share — [rank-cat-share-urge](https://github.com/ObjectiveAI-claude-code-1/rank-cat-share-urge)
 
 The compulsion to immediately show the image to someone else. An image that scores highly here carries an emotional charge so potent that experiencing it alone feels incomplete — it makes sharing feel like a reflex, not a choice. This dimension captures the universality and transferability of the emotional response: the confidence that the image will reliably land for nearly anyone who sees it. It serves as a natural check on the other two dimensions, filtering out reactions that are too mild to share or too personal to transfer.
 
